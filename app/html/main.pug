@@ -1,0 +1,356 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.header-wrap
+	.header-wrap-filter
+	.header-container
+		.main-cont
+			.header
+				.logo AIAgent
+				.menu
+					a(href="#work").menu__item О продукте
+					a(href="#tarif").menu__item Тарифы
+					a(href="#contanct").menu__item Контакты
+				.lang
+					.lang__item
+						.lang__item-wrap
+							.lang__item-flag
+								+icon("russia--color","icon")
+							.lang__item-text rus
+						.lang-arrow
+							+icon("arrow-down","icon")
+				
+	.header-content-wrap
+		.main-cont
+			.header-content
+				.header-title.wow.fadeIn(data-wow-duration="1s" data-wow-delay=".3s") Уменьшить количество ошибок и повысить эффективность работы сотрудников легко!
+				.header-text.wow.fadeInDown(data-wow-duration="1.5s" data-wow-delay=".7s") AIAgent - удобный инструмент, позволяющий гибко настроить необходимые бизнес-правила, рекомендации и подсказки. Внедрить их в работу сотрудников на любой платформе, в любом браузере посредством специального плагина.
+
+//aim
+.section
+	.main-cont
+		.section-title цели
+		.aim
+			.aim__list.wow.fadeIn(data-wow-duration="1s" )
+				.aim__list-el
+					.aim__list-el-icon
+						+icon("checked","icon")
+					.aim__list-el-text Повысить точность и уменьшить количество ошибок при работе сотрудников
+				.aim__list-el
+					.aim__list-el-icon
+						+icon("checked","icon")
+					.aim__list-el-text Снизить расходы на техническую поддержку, обучение сотрудников
+				.aim__list-el
+					.aim__list-el-icon
+						+icon("checked","icon")
+					.aim__list-el-text Повысить эффективность работы сотрудников, за счет уменьшения времени поиска необходимой информации
+				.aim__list-el
+					.aim__list-el-icon
+						+icon("checked","icon")
+					.aim__list-el-text Повысить эффективность работы сотрудников, за счет уменьшения количества шагов для выполнения определенной задачи
+				.aim__list-el
+					.aim__list-el-icon
+						+icon("checked","icon")
+					.aim__list-el-text Снизить нагрузку на систему
+				.aim__list-el
+					.aim__list-el-icon
+						+icon("checked","icon")
+					.aim__list-el-text Сделать работу сотрудников более удобной и комфортной
+			.aim__img.wow.fadeInRight(data-wow-duration="1s" data-wow-delay=".2s")
+				img(src="img/aim.png", alt="")
+
+//advant
+.section.section--gray
+	.main-cont
+		.section-title преимущества
+		.advant
+			.advant__col.wow.fadeIn(data-wow-duration=".3s" data-wow-delay=".1s")
+				.advant-el
+					.advant-el__icon
+						+icon("support","icon")
+					.advant-el__text Техподдержка (24/7) - прозрачность и простота взаимодействия, квалифицированные сотрудники техподдержки
+				.advant-el
+					.advant-el__icon
+						+icon("tools","icon")
+					.advant-el__text Гибкость в конфигурировании и настройке
+				.advant-el
+					.advant-el__icon
+						+icon("reload","icon")
+					.advant-el__text Постоянные обновления и совершенствование системы, поставка последней версии
+				.advant-el
+					.advant-el__icon
+						+icon("integration","icon")
+					.advant-el__text Быстрая интеграция и внедрение в любую платформу
+			.advant__col.wow.fadeIn(data-wow-duration=".3s" data-wow-delay=".2s")
+				.advant-el
+					.advant-el__icon
+						+icon("base","icon")
+					.advant-el__text Широкие возможности для работы с большими данными и машинного обучения
+				.advant-el
+					.advant-el__icon
+						+icon("doc","icon")
+					.advant-el__text Качественная документация
+				.advant-el
+					.advant-el__icon
+						+icon("speed","icon")
+					.advant-el__text Высокая скорость работы и производительность
+				.advant-el
+					.advant-el__icon
+						+icon("code","icon")
+					.advant-el__text Открытый код, возможность доработки и конфигурирования под свои нужды
+				.advant-el
+					.advant-el__icon
+						+icon("web","icon")
+					.advant-el__text Поддержка ключевых браузеров
+			.advant__col.wow.fadeIn(data-wow-duration=".3s" data-wow-delay=".3s")
+				.advant-el
+					.advant-el__icon
+						+icon("config","icon")
+					.advant-el__text Широкие возможности настройки - от написания простых бизнес-правил до использования машинного обучения при формировании рекомендаций
+				.advant-el
+					.advant-el__icon
+						+icon("check-round","icon")
+					.advant-el__text Простота, удобство и понятность интерфейса
+				.advant-el
+					.advant-el__icon
+						+icon("tech","icon")
+					.advant-el__text Использование современных технологий, методологий и инструментов в разработке
+				.advant-el
+					.advant-el__icon
+						+icon("monitor","icon")
+					.advant-el__text Возможность выбора режима работы: saas & onside
+
+//ability
+.section.section--ability
+	.main-cont
+		.section-title возможности
+		.ability
+			.ability-list.wow.fadeInLeft(data-wow-duration=".5s" data-wow-delay=".2s")
+				.title Клиентская часть:
+				.ability-list__el.ability-list__el--active
+					.ability-list__el-icon
+					.ability-list__el-text Формирование сообщений, рекомендаций и всплывающих подсказок, позволяющих направить пользователя при работе и уведомить о наступлении  определенных событий
+				.ability-list__el
+					.ability-list__el-icon
+					.ability-list__el-text Предложения по автозаполнению полей наиболее вероятными значениями, для ускорения процесса заполнения формы и уменьшения ошибок
+				.ability-list__el
+					.ability-list__el-icon
+					.ability-list__el-text Отображение похожих объектов, для ускорения поиска решения и другой необходимой информации
+
+			.ability-slider-wrap.wow.zoomIn(data-wow-duration=".5s" data-wow-delay=".5s")
+				.slider-wrap
+					.slider-control.slider-control--left
+						+icon("arrow-left","icon")
+					.slider-control.slider-control--right
+						+icon("arrow-right","icon")
+					.ability-slider.slider-item
+						.ability-slider__el
+							img(src="img/ability-1.png", alt="")
+						.ability-slider__el
+							img(src="img/ability-2.png", alt="")
+						.ability-slider__el
+							img(src="img/ability-3.png", alt="")
+
+//part
+.section.section--untop
+	.main-cont
+		.title Серверная часть:
+		.part
+			.part__el.wow.fadeInLeft(data-wow-duration=".3s" data-wow-delay=".1s")
+				.part__el-icon
+					+icon("struct","icon")
+				.part__el-text Поиск структуры данных
+			.part__el.wow.fadeInLeft(data-wow-duration=".3s" data-wow-delay=".2s")
+				.part__el-icon
+					+icon("error","icon")
+				.part__el-text Поиск ошибок
+			.part__el.wow.fadeInDown(data-wow-duration=".3s" data-wow-delay=".3s")
+				.part__el-icon
+					+icon("search","icon")
+				.part__el-text Поиск некорректных данных в исходных данных
+			.part__el.wow.fadeInRight(data-wow-duration=".3s" data-wow-delay=".4s")
+				.part__el-icon
+					+icon("model-check","icon")
+				.part__el-text Проверка модели
+			.part__el.wow.fadeInRight(data-wow-duration=".3s" data-wow-delay=".5s")
+				.part__el-icon
+					+icon("model","icon")
+				.part__el-text Подбор и оценка модели
+
+//how
+.section.section--gray#work
+	.main-cont
+		.section-title как все работает
+		.video-wrap.wow.fadeInUp(data-wow-duration=".3s" data-wow-delay=".2s")
+			a(href="https://youtu.be/jEgpqDRdDqc").fancybox.video-link
+				.video(style="background-image:url('img/video.png')")
+					.video-filter
+					.video-icon
+						+icon("play","icon")
+
+//tariff
+.section#tarif
+	.main-cont
+		.section-title тарифы
+		.tariff
+			.tariff__el.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".2s")
+				.tariff__el-head Standart
+				.tariff__el-title
+					.tariff__el-title-text Бесплатно
+				.tariff__el-text Режим работы saas
+				.tariff__el-text До 5 одновременно работающих пользователей
+				.tariff__list
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("close","icon icon--false")
+						.tariff__list-el-text Внедрение, разработка под любое приложение
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("close","icon icon--false")
+						.tariff__list-el-text Техническая поддержка
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("close","icon icon--false")
+						.tariff__list-el-text Обучение
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("close","icon icon--false")
+						.tariff__list-el-text Консультации
+				div(data-modal="order").modal-get.tariff-get Купить
+
+			.tariff__el.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".6s")
+				.tariff__el-head Professional
+				.tariff__el-title
+					.tariff__el-title-text 200 000
+					.tariff__el-title-sub рублей/год
+				.tariff__el-text Режим работы saas
+				.tariff__el-text До 20 одновременно работающих пользователей
+				.tariff__list
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("close","icon icon--false")
+						.tariff__list-el-text Внедрение, разработка под любое приложение
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("check","icon icon--true")
+						.tariff__list-el-text Техническая поддержка
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("check","icon icon--true")
+						.tariff__list-el-text Обучение
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("close","icon icon--false")
+						.tariff__list-el-text Консультации
+				div(data-modal="order").modal-get.tariff-get Купить
+
+			.tariff__el.tariff__el--lg.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay="1s")
+				.tariff__el-head Professional
+				.tariff__el-title
+					.tariff__el-title-text 500 000
+					.tariff__el-title-sub рублей/год
+				.tariff__el-text Режим работы on-site
+				.tariff__el-text Неограниченное количество пользователей
+				.tariff__list
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("check","icon icon--true")
+						.tariff__list-el-text Внедрение, разработка под любое приложение
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("check","icon icon--true")
+						.tariff__list-el-text Техническая поддержка
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("check","icon icon--true")
+						.tariff__list-el-text Обучение
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("check","icon icon--true")
+						.tariff__list-el-text Консультации
+				div(data-modal="order").modal-get.tariff-get Купить
+
+//contact
+.section.section--gray#contanct
+	.main-cont
+		.section-title остались вопросы?
+		.contact.wow.fadeIn(data-wow-duration=".8s" data-wow-delay=".2s")
+			.contact-info
+				.contact-text Позвоните или напишите нам, чтобы узнать интересующую Вас информацию
+				.contact-list
+					.contact-list__el
+						.contact-list__el-icon
+							+icon("adres","icon")
+						.contact-list__el-content
+							.contact-list__el-title Адрес
+							.contact-list__el-text г. Москва, ул. Каланчевская 15, офис 402
+					.contact-list__el
+						.contact-list__el-icon
+							+icon("phone","icon")
+						.contact-list__el-content
+							.contact-list__el-title Телефон
+							a(href="tel:+7 (495) 981-57-10").contact-list__el-text +7 (495) 981-57-10
+					.contact-list__el
+						.contact-list__el-icon
+							+icon("mail","icon")
+						.contact-list__el-content
+							.contact-list__el-title Эл. адрес
+							a(href="mailto:info@itexpert.ru").contact-list__el-text info@itexpert.ru
+					.contact-list__el
+						.contact-list__el-icon
+							+icon("web","icon")
+						.contact-list__el-content
+							.contact-list__el-title Сайт
+							a(href="www.itexpert.ru").contact-list__el-text www.itexpert.ru
+			.contact-form
+				.contact-text Или просто заполните форму обратной связи, и мы сами свяжемся с Вами
+				form.validate-form( action="javascript:void(null);")
+					.input-row
+						input(type="text" name="name" placeholder="Ваше имя").input
+					.input-row
+						input(type="text" name="phone" placeholder="Ваш телефон").input
+					.input-row
+						textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+					.agree-row
+						.check-el
+							label.style-label.style-label--checkbox
+								input(type="checkbox" name="agree").sytle-input
+								.sytle-input-element
+									+icon("checked","icon-check")
+								.agree-row__text Согласен с
+									a(href="#") условиями обработки персональных данных
+					input(type="submit" value="Отправить").form-get
+
+.footer
+
+.modal-layer
+	.modal-filter
+	.modal-wrap
+		.modal(data-modal="order")
+			.modal-content
+				.modal-close
+					+icon("close","icon")
+				.modal-title Оставьте заявку
+				.modal-text Обращаетесь к нам впервые? <br> Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!
+				form.validate-form( action="javascript:void(null);")
+					.input-row
+						input(type="text" name="name" placeholder="Ваше имя").input
+					.input-row
+						input(type="text" name="phone" placeholder="Ваш телефон").input
+					.input-row
+						textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+					.agree-row
+						.check-el
+							label.style-label.style-label--checkbox
+								input(type="checkbox" name="agree").sytle-input
+								.sytle-input-element
+									+icon("checked","icon-check")
+								.agree-row__text Согласен с
+									a(href="#") условиями обработки персональных данных
+					input(type="submit" value="Отправить заявку").modal-send
+		//success message
+		.modal(data-modal="truemessage")
+			.modal-content.modal-content--true
+				+icon("interface","icon")
+				.modal-text-true Ваша заявка принята
+include ./block_html/_script.pug

@@ -1,0 +1,47 @@
+html 
+	box-sizing border-box
+*,
+*:before,
+*:after 
+	box-sizing: inherit
+
+a
+	text-decoration none
+	color $link-color
+	
+a:hover
+	text-decoration none
+	color  $link-color-hover
+
+.type--bold
+	font-weight $weigh-bold 
+	
+img,
+iframe
+	max-width 100%
+	height auto
+	border 0
+	-ms-interpolation-mode bicubic
+	display block
+
+table
+	table(true,true)
+
+body > svg
+	display none
+
+//responsive table	
+.small-only
+	+below(768px)
+		display table
+	display none
+	
+.large-only
+	+below(768px)
+		display none
+
+.rub{
+	font-family 'RUB'
+	font-style normal 
+}
+
