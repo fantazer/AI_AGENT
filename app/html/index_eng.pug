@@ -1,0 +1,364 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.header-wrap
+	.header-wrap-filter
+	.header-container
+		.main-cont
+			.header
+				.logo AIAgent
+				.menu
+					a(href="#work").menu__item About
+					a(href="#tarif").menu__item Tariff
+					a(href="#contanct").menu__item Contacts
+				.lang
+					.lang__item
+						.lang__item-wrap
+							.lang__item-flag
+								+icon("united-kingdom--color","icon")
+							.lang__item-text eng
+						a(href="index.html").lang__item-wrap.lang__item-wrap--sub
+							.lang__item-flag
+								+icon("russia--color","icon")
+							.lang__item-text rus
+						.lang-arrow
+							+icon("arrow-down","icon")
+
+
+	.header-content-wrap
+		.main-cont
+			.header-content
+				.header-title.wow.fadeIn(data-wow-duration="1s" data-wow-delay=".3s") Decrease amount of errors and increase efficiency of work of employees – it is easy!
+				.header-text.wow.fadeInDown(data-wow-duration="1.5s" data-wow-delay=".7s") AIAgent - convenient tool, which allows configuring flexibly required business rules, recommendations and tooltips. And integrate them to employee’s work on any platform, any browser via special plugin.
+
+//aim
+.section
+	.main-cont
+		.section-title goals
+		.aim
+			.aim__list.wow.fadeIn(data-wow-duration="1s" )
+				.aim__list-el
+					.aim__list-el-icon
+						+icon("checked","icon")
+					.aim__list-el-text Increase accuracy and decrease amount of errors during employees work
+				.aim__list-el
+					.aim__list-el-icon
+						+icon("checked","icon")
+					.aim__list-el-text Reduce expenses for tech-support, employees education
+				.aim__list-el
+					.aim__list-el-icon
+						+icon("checked","icon")
+					.aim__list-el-text Increase efficient of employees work due decreasing time of searching necessary information
+				.aim__list-el
+					.aim__list-el-icon
+						+icon("checked","icon")
+					.aim__list-el-text Increase efficient of employees work due decreasing amount of steps for perform specific task
+				.aim__list-el
+					.aim__list-el-icon
+						+icon("checked","icon")
+					.aim__list-el-text Reduce system workload
+				.aim__list-el
+					.aim__list-el-icon
+						+icon("checked","icon")
+					.aim__list-el-text Make employees work more flexible and comfortable
+			.aim__img.wow.fadeInRight(data-wow-duration="1s" data-wow-delay=".2s")
+				img(src="img/aim.png", alt="")
+
+//advant
+.section.section--gray
+	.main-cont
+		.section-title advantage
+		.advant
+			.advant__col.wow.fadeIn(data-wow-duration=".3s" data-wow-delay=".1s")
+				.advant-el
+					.advant-el__icon
+						+icon("support","icon")
+					.advant-el__text Tech-Support (24/7) - clarity and ease of interaction, qualified tech-support workers
+				.advant-el
+					.advant-el__icon
+						+icon("tools","icon")
+					.advant-el__text Flexibility in configuration and customization
+				.advant-el
+					.advant-el__icon
+						+icon("reload","icon")
+					.advant-el__text Continuous updates and system improvement, providing last version
+				.advant-el
+					.advant-el__icon
+						+icon("integration","icon")
+					.advant-el__text Fast integration and injection to any platform
+			.advant__col.wow.fadeIn(data-wow-duration=".3s" data-wow-delay=".2s")
+				.advant-el
+					.advant-el__icon
+						+icon("base","icon")
+					.advant-el__text Wide customization opportunity - from writing simplest business rules to using machine learning to make recommendations during recommendations forming
+
+				.advant-el
+					.advant-el__icon
+						+icon("doc","icon")
+					.advant-el__text Qualified documentation
+				.advant-el
+					.advant-el__icon
+						+icon("speed","icon")
+					.advant-el__text High speed and performance
+				.advant-el
+					.advant-el__icon
+						+icon("code","icon")
+					.advant-el__text Open source, ability to modify and customize for personal needs
+				.advant-el
+					.advant-el__icon
+						+icon("web","icon")
+					.advant-el__text Support modern browsers
+			.advant__col.wow.fadeIn(data-wow-duration=".3s" data-wow-delay=".3s")
+				.advant-el
+					.advant-el__icon
+						+icon("config","icon")
+					.advant-el__text Wide opportunity for working with big data and machine learning
+				.advant-el
+					.advant-el__icon
+						+icon("check-round","icon")
+					.advant-el__text Simplicity, convenience and user-friendly interface
+				.advant-el
+					.advant-el__icon
+						+icon("tech","icon")
+					.advant-el__text Using actual technologies, methodologies and tools during development
+				.advant-el
+					.advant-el__icon
+						+icon("monitor","icon")
+					.advant-el__text Ability to work in mode: SaaS & onside
+//ability
+.section.section--ability
+	.main-cont
+		.section-title capability
+		.ability
+			.ability-list.wow.fadeInLeft(data-wow-duration=".5s" data-wow-delay=".2s")
+				.title Client:
+				.ability-list__el.ability-list__el--active
+					.ability-list__el-icon
+					.ability-list__el-text Forming messages, recommendation and pop-ups, which allows to direct users during work and notify about occurrence of certain events
+				.ability-list__el
+					.ability-list__el-icon
+					.ability-list__el-text Suggestions about auto-filling fields more probably values for speed up process of filling form and reducing errors count
+				.ability-list__el
+					.ability-list__el-icon
+					.ability-list__el-text Displaying similar objects for to speed up the search for solution and other required information
+
+			.ability-slider-wrap.wow.zoomIn(data-wow-duration=".5s" data-wow-delay=".5s")
+				.slider-wrap
+					.slider-control.slider-control--left
+						+icon("arrow-left","icon")
+					.slider-control.slider-control--right
+						+icon("arrow-right","icon")
+					.ability-slider.slider-item
+						.ability-slider__el
+							img(src="img/ability-1.png", alt="")
+						.ability-slider__el
+							img(src="img/ability-2.png", alt="")
+						.ability-slider__el
+							img(src="img/ability-3.png", alt="")
+
+//part
+.section.section--untop
+	.main-cont
+		.title Server side (admin panel):
+		.part
+			.part__el.wow.fadeInLeft(data-wow-duration=".3s" data-wow-delay=".1s")
+				.part__el-icon
+					+icon("struct","icon")
+				.part__el-text Data structures searching
+			.part__el.wow.fadeInLeft(data-wow-duration=".3s" data-wow-delay=".2s")
+				.part__el-icon
+					+icon("error","icon")
+				.part__el-text Errors searching
+			.part__el.wow.fadeInDown(data-wow-duration=".3s" data-wow-delay=".3s")
+				.part__el-icon
+					+icon("search","icon")
+				.part__el-text Searching incorrect values in source links
+			.part__el.wow.fadeInRight(data-wow-duration=".3s" data-wow-delay=".4s")
+				.part__el-icon
+					+icon("model-check","icon")
+				.part__el-text Model validation
+			.part__el.wow.fadeInRight(data-wow-duration=".3s" data-wow-delay=".5s")
+				.part__el-icon
+					+icon("model","icon")
+				.part__el-text Selection and assessment of the model
+
+//how
+.section.section--gray#work
+	.main-cont
+		.section-title Video materials
+		.video-wrap.wow.fadeInUp(data-wow-duration=".3s" data-wow-delay=".2s")
+			a(href="https://youtu.be/jEgpqDRdDqc").fancybox.video-link
+				.video(style="background-image:url('img/video.png')")
+					.video-filter
+					.video-icon
+						+icon("play","icon")
+
+//tariff
+.section#tarif
+	.main-cont
+		.section-title Price plans
+		.tariff
+			.tariff__el.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".2s")
+				.tariff__el-head Standart
+				.tariff__el-title
+					.tariff__el-title-text free
+				.tariff__el-text Work mode: SaaS
+				.tariff__el-text Amount simultaneously working users: up to 5
+				.tariff__list
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("close","icon icon--false")
+						.tariff__list-el-text Integration, development for any app
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("close","icon icon--false")
+						.tariff__list-el-text Tech-support
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("close","icon icon--false")
+						.tariff__list-el-text Trainings
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("close","icon icon--false")
+						.tariff__list-el-text Consultations
+				div(data-modal="order").modal-get.tariff-get BUY
+
+			.tariff__el.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".6s")
+				.tariff__el-head Professional
+				.tariff__el-title
+					.tariff__el-title-text 200 000
+					.tariff__el-title-sub rubles annual
+				.tariff__el-text Work mode: SaaS
+				.tariff__el-text Amount simultaneously working users: up to 20
+				.tariff__list
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("close","icon icon--false")
+						.tariff__list-el-text Integration, development for any app
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("check","icon icon--true")
+						.tariff__list-el-text Tech-support
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("check","icon icon--true")
+						.tariff__list-el-text Trainings
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("close","icon icon--false")
+						.tariff__list-el-text Consultations
+				div(data-modal="order").modal-get.tariff-get BUY
+
+			.tariff__el.tariff__el--lg.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay="1s")
+				.tariff__el-head Professional
+				.tariff__el-title
+					.tariff__el-title-text 500 000
+					.tariff__el-title-sub rubles annual
+				.tariff__el-text Work mode: Onside
+				.tariff__el-text Amount simultaneously working users: not limited
+				.tariff__list
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("check","icon icon--true")
+						.tariff__list-el-text Integration, development for any app
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("check","icon icon--true")
+						.tariff__list-el-text Tech-support
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("check","icon icon--true")
+						.tariff__list-el-text Trainings
+					.tariff__list-el
+						.tariff__list-el-icon
+							+icon("check","icon icon--true")
+						.tariff__list-el-text Consultations
+				div(data-modal="order").modal-get.tariff-get BUY
+
+//contact
+.section.section--gray#contanct
+	.main-cont
+		.section-title Contacts
+		.contact.wow.fadeIn(data-wow-duration=".8s" data-wow-delay=".2s")
+			.contact-info
+				.contact-text Call or email us to find out the information you need. Or just fill form contact form and we will contact you.
+				.contact-list
+					.contact-list__el
+						.contact-list__el-icon
+							+icon("adres","icon")
+						.contact-list__el-content
+							.contact-list__el-title Address
+							.contact-list__el-text Moscow, Kalanchevskaya st., building 15, office 402
+					.contact-list__el
+						.contact-list__el-icon
+							+icon("phone","icon")
+						.contact-list__el-content
+							.contact-list__el-title Phone
+							a(href="tel:+7 (495) 981-57-10").contact-list__el-text +7 (495) 981-57-10
+					.contact-list__el
+						.contact-list__el-icon
+							+icon("mail","icon")
+						.contact-list__el-content
+							.contact-list__el-title Email
+							a(href="mailto:info@itexpert.ru").contact-list__el-text info@itexpert.ru
+					.contact-list__el
+						.contact-list__el-icon
+							+icon("web","icon")
+						.contact-list__el-content
+							.contact-list__el-title Website
+							a(href="http://www.itexpert.ru").contact-list__el-text www.itexpert.ru
+			.contact-form
+				.contact-text Or simply fill out the feedback form and we will contact you.
+				form.validate-form( action="javascript:void(null);")
+					.input-row
+						input(type="text" name="name" placeholder="Your name").input
+					.input-row
+						input(type="text" name="phone" placeholder="Your phone").input
+					.input-row
+						textarea(name="comment", cols="30", rows="5" placeholder="Your message").input
+					.agree-row
+						.check-el
+							label.style-label.style-label--checkbox
+								input(type="checkbox" name="agree").sytle-input
+								.sytle-input-element
+									+icon("checked","icon-check")
+								.agree-row__text I agree with
+									a(href="http://www.itexpert.ru/images/person_ano.pdf") the terms of personal data processing
+					input(type="submit" value="Send").form-get
+
+.footer
+
+
+.modal-layer
+	.modal-filter
+	.modal-wrap
+		.modal(data-modal="order")
+			.modal-content
+				.modal-close
+					+icon("close","icon")
+				.modal-title Leave a request
+
+				form.validate-form( action="javascript:void(null);")
+					.input-row
+						input(type="text" name="name" placeholder="Your name").input
+					.input-row
+						input(type="text" name="phone" placeholder="Your phone").input
+					.input-row
+						textarea(name="comment", cols="30", rows="5" placeholder="Your message").input
+					.agree-row
+						.check-el
+							label.style-label.style-label--checkbox
+								input(type="checkbox" name="agree").sytle-input
+								.sytle-input-element
+									+icon("checked","icon-check")
+								.agree-row__text I agree with
+									a(href="http://www.itexpert.ru/images/person_ano.pdf") the terms of personal data processing
+					input(type="submit" value="Send").modal-send
+		//success message
+		.modal(data-modal="truemessage")
+			.modal-content.modal-content--true
+				+icon("interface","icon")
+				.modal-text-true Your application is accepted
+
+
+include ./block_html/_script.pug

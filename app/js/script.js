@@ -180,11 +180,12 @@ $(document).ready(function () {
 					type: "POST",
 					url: "sender.php",
 					data: $(form).serialize(),
-					timeout: 3000,
+					timeout: 3000
 				});
+				//console.log($(form).serialize());
 				closeModal();
 				initModal("truemessage");
-			/*	setTimeout(function () {
+			setTimeout(function () {
 					closeModal();
 					$(':input', '.validate-form') //очитска формы от данных
 						.not(':button, :submit, :reset, :hidden')
@@ -192,7 +193,6 @@ $(document).ready(function () {
 						.removeAttr('checked')
 						.removeAttr('selected')
 				}, 2500)
-*/
 			}
 		});
 	});

@@ -174,12 +174,32 @@ body
 
 .lang
 	margin-left: 5%
+	position: relative
+	padding: 10px
+	&:hover
+		background: white
+		.lang__item-text
+			color black
+		.lang__item-wrap--sub
+			display: flex !important
+		.icon
+			fill black
+.lang__item-wrap--sub
+	display: none!important
+	position: absolute
+	top 100%
+	left 0
+	background: white
+	padding: 10px
+	border-top 1px solid #c1c1c1
 .lang__item
 	f()
 	justify-content: center
 	cp()
+
 .lang__item-wrap
 	f()
+	width: 100%
 .lang__item-flag
 	margin-right: 10px
 	.icon
@@ -613,3 +633,4 @@ body
 	+below(768px)
 		visibility: visible !important;
 		animation: none !important;
+

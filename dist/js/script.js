@@ -1,14 +1,29 @@
 $(document).ready(function () {
+
+	//wow animate
 	var wow = new WOW(
 		{
 			boxClass: 'wow',
 			animateClass: 'animated',
 			offset: 300,
-			mobile: true,
+			mobile: false,
 			live: true,
 		}
 	);
 	wow.init();
+	//wow animate end
+
+	//smooth scroll to id
+	$('a[href*="#"]').on('click', function (e) {
+		e.preventDefault();
+
+		$('html, body').animate({
+			scrollTop: $($(this).attr('href')).offset().top
+		}, 500, 'linear');
+	});
+	//smooth scroll to id === end
+
+
 	//video popup
 	$('.fancybox').fancybox();
 	//video popup === end
@@ -43,7 +58,7 @@ $(document).ready(function () {
 	//video bg
 	$('.header-wrap').vide(
 		{
-			webm: 'img/work.webm' //путь к файлу
+			webm: 'img/Office-Day.webm' //путь к файлу
 		},
 		{
 			muted: true,
@@ -165,11 +180,12 @@ $(document).ready(function () {
 					type: "POST",
 					url: "sender.php",
 					data: $(form).serialize(),
-					timeout: 3000,
+					timeout: 3000
 				});
+				//console.log($(form).serialize());
 				closeModal();
 				initModal("truemessage");
-			/*	setTimeout(function () {
+			setTimeout(function () {
 					closeModal();
 					$(':input', '.validate-form') //очитска формы от данных
 						.not(':button, :submit, :reset, :hidden')
@@ -177,7 +193,6 @@ $(document).ready(function () {
 						.removeAttr('checked')
 						.removeAttr('selected')
 				}, 2500)
-*/
 			}
 		});
 	});
