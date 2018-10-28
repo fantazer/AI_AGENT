@@ -58,7 +58,9 @@ $(document).ready(function () {
 	//video bg
 	$('.header-wrap').vide(
 		{
-			webm: 'img/Office-Day.webm' //путь к файлу
+			mp4: 'img/Office-Day.mp4', //путь к файлу
+			webm: 'img/Office-Day.webm', //путь к файлу
+			poster: 'img/Office-Day.jpg' //путь к файлу
 		},
 		{
 			muted: true,
